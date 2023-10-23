@@ -35,8 +35,5 @@ public class StrawEnd : MonoBehaviour
             anim.SetTrigger("Destroy");
             Destroy(closestObject,0.75f);
         }
-        
-
-
     }
 }
