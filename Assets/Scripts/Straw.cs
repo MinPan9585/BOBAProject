@@ -15,7 +15,7 @@ public class Straw : MonoBehaviour
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector3(mouseWorldPos.x, mouseWorldPos.y, 0);
 
-        float mouseDegree = Mathf.Atan2(mouseWorldPos.y, mouseWorldPos.x);
+        float mouseDegree = Mathf.Atan2(mouseWorldPos.y - 1.72f, mouseWorldPos.x);
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, mouseDegree * Mathf.Rad2Deg - 90));
     }
 }
